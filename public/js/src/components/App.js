@@ -4,16 +4,11 @@ function App(props) {
             <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 {/*   <TopNav>   */}
                 <TopNav></TopNav>
-
                 {/*   <SideNav>   */}
                 <SideNav></SideNav>
             </nav>
-
             <div id="page-wrapper">
-
                 <div className="container-fluid">
-
-
                     <div className="row">
                         <div className="col-lg-12">
                             <h1 className="page-header">
@@ -27,38 +22,27 @@ function App(props) {
                         </div>
                     </div>
                     <div className="row">
-
                         {/*   </Comments>   */}
                         <Comments newComments={props.newComments}></Comments>
-
                         {/*   <Tasks>   */}
-                        <Tasks></Tasks>
-
+                        <Tasks newTasks={newTasks}></Tasks>
                         {/*   <Orders>   */}
-                        <Orders></Orders>
-
+                        <Orders newOrders={newOrders}></Orders>
                         {/*   <Tickets>   */}
-                        <Tickets></Tickets>
-
+                        <Tickets tickets={tickets}></Tickets>
                     </div>
-
                     {/*   <AreaChart>   */}
                     <AreaChart></AreaChart>
-
                     <div className="row">
-
                         {/*   <DonutChart>   */}
                         <DonutChart></DonutChart>
-
                         <div className="col-lg-4">
                             {/*   <TasksPanel>   */}
                             <TasksPanel></TasksPanel>
-
-
                         </div>
                         <div className="col-lg-4">
                             {/*   </TransactionsPanel>   */}
-                            <TransactionsPanel></TransactionsPanel>
+                            <TransactionsPanel orders={orders}></TransactionsPanel>
                         </div>
                     </div>
                 </div>
