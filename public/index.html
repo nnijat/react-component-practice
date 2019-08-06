@@ -1,3 +1,4 @@
+http-server
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,36 +27,54 @@
     <script src="js/jquery.js"></script>
     <script>
         setTimeout(() => {
-            $.getScript("js/plugins/morris/raphael.min.js",()=>{
-                $.getScript("js/plugins/morris/morris.min.js",()=>{
-                    $.getScript("js/plugins/morris/morris-data.js",()=>{
-    
+            $.getScript("js/plugins/morris/raphael.min.js", () => {
+                $.getScript("js/plugins/morris/morris.min.js", () => {
+                    $.getScript("js/plugins/morris/morris-data.js", () => {
+
                     });
                 });
-            }); 
+            });
         }, 2500);
     </script>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
     <script type="text/babel" src="./js/src/state.js"></script>
-    <script  type="text/babel" src="./js/src/components/App.js"></script>
-    <script  type="text/babel" src="./js/src/index.js"></script>
+
+    <script type="text/babel" src="./js/src/components/DateTime.js"></script>
+    <script type="text/babel" src="./js/src/components/MessagePreview.js"></script>
+    <script type="text/babel" src="./js/src/components/TaskItem.js"></script>
+    <script type="text/babel" src="./js/src/components/TransactionRow.js"></script>
+
+    <script type="text/babel" src="./js/src/components/SideNav.js"></script>
+    <script type="text/babel" src="./js/src/components/TopNav.js"></script>
+    <script type="text/babel" src="./js/src/components/Comments.js"></script>
+    <script type="text/babel" src="./js/src/components/Tasks.js"></script>
+    <script type="text/babel" src="./js/src/components/Orders.js"></script>
+    <script type="text/babel" src="./js/src/components/Tickets.js"></script>
+    <script type="text/babel" src="./js/src/components/AreaChart.js"></script>
+    <script type="text/babel" src="./js/src/components/DonutChart.js"></script>
+    <script type="text/babel" src="./js/src/components/TasksPanel.js"></script>
+    <script type="text/babel" src="./js/src/components/TransactionsPanel.js"></script>
+
+
+
+    <script type="text/babel" src="./js/src/components/App.js"></script>
+    <script type="text/babel" src="./js/src/index.js"></script>
+
 </head>
 
 <body>
 
     <div id="root">
-        
-      
+
+
     </div>
     <!-- /#wrapper -->
 
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-
 
 </body>
 
