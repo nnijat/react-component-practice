@@ -3,7 +3,7 @@ function App(props) {
         <div id="wrapper">
             <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 {/*   <TopNav>   */}
-                <TopNav></TopNav>
+                <TopNav message={props.message}></TopNav>
                 {/*   <SideNav>   */}
                 <SideNav></SideNav>
             </nav>
@@ -25,11 +25,11 @@ function App(props) {
                         {/*   </Comments>   */}
                         <Comments newComments={props.newComments}></Comments>
                         {/*   <Tasks>   */}
-                        <Tasks newTasks={newTasks}></Tasks>
+                        <Tasks newTasks={props.newTasks}></Tasks>
                         {/*   <Orders>   */}
-                        <Orders newOrders={newOrders}></Orders>
+                        <Orders newOrders={props.newOrders}></Orders>
                         {/*   <Tickets>   */}
-                        <Tickets tickets={tickets}></Tickets>
+                        <Tickets tickets={props.tickets}></Tickets>
                     </div>
                     {/*   <AreaChart>   */}
                     <AreaChart></AreaChart>
@@ -38,11 +38,11 @@ function App(props) {
                         <DonutChart></DonutChart>
                         <div className="col-lg-4">
                             {/*   <TasksPanel>   */}
-                            <TasksPanel></TasksPanel>
+                            <TasksPanel tasks={props.tasks}></TasksPanel>
                         </div>
                         <div className="col-lg-4">
                             {/*   </TransactionsPanel>   */}
-                            <TransactionsPanel orders={orders}></TransactionsPanel>
+                            <TransactionsPanel orders={props.orders}></TransactionsPanel>
                         </div>
                     </div>
                 </div>
