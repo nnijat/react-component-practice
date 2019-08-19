@@ -3,7 +3,7 @@ function App(props) {
         <div id="wrapper">
             <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 {/*   <TopNav>   */}
-                <TopNav message={props.message}></TopNav>
+                <TopNav messages={props.messages}></TopNav>
                 {/*   <SideNav>   */}
                 <SideNav></SideNav>
             </nav>

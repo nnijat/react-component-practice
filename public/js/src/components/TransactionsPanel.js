@@ -1,4 +1,15 @@
 function TransactionsPanel(props) {
+
+    let orders = props.orders.map((order, index) =>
+        <TransactionRow
+            key={index}
+            order={order}
+
+        />
+    )
+
+
+
     return (
         <div className="panel panel-default">
             <div className="panel-heading">
@@ -17,7 +28,7 @@ function TransactionsPanel(props) {
                         </thead>
                         <tbody>
                             {/*   <TransactionRow>   */}
-                            <TransactionRow></TransactionRow>
+                            {orders}
                         </tbody>
                     </table>
                 </div>
